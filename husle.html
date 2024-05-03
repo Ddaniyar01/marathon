@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на марафон</title>
+    <link rel="stylesheet" href="dad.css">
+</head>
+<body>
+    
+<nav>
+    <div class="All_nav_menu">
+        <div class="logo">
+            <h1>марафон «ABYROI»</h1>
+         <div class="top">
+            <ul>
+                <li><a href="#">Оплата участие в марафоне</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                
+            </ul>
+         </div>
+        </div>
+    </div>
+</nav>
+<button onclick="myFunction()">Click</button>
+<p id="demo">Button not clicked</p>
+    
+<div id="main"><h1>Регистрация на марафон</h1>
+    <form action="/submit_registration" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="distance">Выберите дистанцию:</label>
+        <select id="distance" name="distance" required>
+            <option value="5">2 км</option>
+            <option value="10">5 км</option>
+            <option value="21">10 км</option>
+            
+        </select><br><br>
+
+        <input type="submit" value="Зарегистрироваться">
+        <div class="img">
+          
+            <!-- <img src="img/scale_1200.jfif" alt=""> -->
+        </div>
+    </form></div>
+
+<div id="footer">
+<div class="top">
+    <ul></ul>
+
+    <li><a href="footer">Оплата участие в марафоне</a></li>
+        <li><a href="footer">О нас</a></li>
+        <li><a href="footer">Контакты</a></li></ul></div></div>
+   <script src="script.js"></script>
+   
+</body>
+</html>
